@@ -1,0 +1,56 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+
+body{
+    font-size: 15px;
+
+}
+
+.top-background{
+    position:fixed;
+    left: 0;
+    top:0;
+}
+
+.bottom-background{
+    position:fixed;
+    bottom:0;
+    right:0;
+    z-index: -1;
+}
+
+.desktop-top{
+    position:fixed;
+    left: 0;
+    top:0;
+}
+
+.desktop-bottom{
+    position:fixed;
+    right:-3rem;
+    bottom:0;
+    max-width:100%;
+}
+
+
+
+.desktop-bottom,.desktop-top{
+    display: none;
+}
+
+@media screen and (min-width:768px){
+.top-background,.bottom-background{
+    display: none;
+}
+
+.desktop-bottom,.desktop-top{
+    display: block;
+}
+}
+
+
